@@ -27,7 +27,7 @@ const Login = () => {
             id: result.id,
             token: result.token,
           }
-          localStorage.setItem('userInfo', JSON.stringify(userInfo));
+          localStorage.setItem('userInfoLms', JSON.stringify(userInfo));
           navigate('/account/dashboard');
         } else {
           toast.error(result.message);
